@@ -1,0 +1,25 @@
+function titleCase(str) {
+  let lowStr = str.toLowerCase()
+  let regex = /\s/g
+  let numOfWords = str.match(regex).length
+  let letterUpCase = ""
+  let wordUpCase = ""
+  let titleStr = ""
+
+  for (let i = 0; i < numOfWords + 1; i++) {
+    letterUpCase = lowStr.slice(0, 1).toUpperCase()
+    wordUpCase = letterUpCase + lowStr.slice(1, lowStr.indexOf(" ") + 1)
+    titleStr += wordUpCase
+    lowStr = lowStr.slice(lowStr.indexOf(" ") + 1, lowStr.length + 1)
+  }
+  titleStr = titleStr + lowStr.slice(1, lowStr.length)
+  
+  console.log(lowStr)
+  console.log(numOfWords)
+  console.log(letterUpCase)
+  console.log(wordUpCase)
+  console.log(titleStr)
+  return titleStr;
+}
+
+titleCase("I'm a little tea pot");

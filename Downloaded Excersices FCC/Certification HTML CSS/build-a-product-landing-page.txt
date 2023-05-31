@@ -1,0 +1,270 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guitars Landing Page</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <section>
+      <img id="header-img" src="https://thumbs.dreamstime.com/b/print-174007538.jpg" />
+      <nav id="nav-bar">
+        <a class="nav-link" href="#title">About</a>
+        <a class="nav-link" href="#video">Tutorial</a>
+        <a class="nav-link" href="#list">Shopping</a>
+      </nav>
+      </section>
+      <h1 id="title">Guitar Shop</h1>
+      <p>Alder Body</p>
+      <p>Gloss Polyurethane Finish</p>
+      <p>Authentic CuNiFe Wide-Range Humbucking and Pure Vintage '77 </p>
+      <p>Single-Coil Tele® pickups</p>
+      <p>“C”-Shaped Neck Profile</p>
+      <p>Pure Vintage 6-Saddle Tele® with Slotted Steel Barrel Saddles</p>
+      <p>Pure Vintage Fender® “F” Stamped Tuners</p>
+      <iframe id="video" src="https://www.youtube.com/embed/Wd5dk5JDYl4" title="Fender Custom Shop &#39;51 Nocaster Tele Pickup Set | Fender" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+      </iframe>
+    </header>
+    <main>
+      <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" name="email" type="email" required placeholder="Enter your e-mail here..."></input>
+      <section class="list" id="list">
+        <div class="choices">
+          <div class="guitar-choice">Stratocaster</div>
+          <div class="price">$2,499.00</div>
+          <div class="features">
+            <li>6-Saddle Strings-Through-Body Strat® Hardtail with Bent Steel Saddlesz</li>
+            <li>4-Bolt with Custom Hitmaker Logo, Serialized</li>
+            <li>Master Volume, Tone 1. (Neck/Middle Pickups), Tone 2. (Bridge Pickup)</li>
+          </div>
+          <div><input class="buy" type="button" value="BUY"></input></div>
+        </div>
+        <div class="choices">
+          <div class="guitar-choice">Telecaster</div>
+          <div class="price">$1,899.00</div>
+          <div class="features">
+            <li>DiMarzio® D Activator™</li>
+            <li>3-Position Toggle: Up: Neck Pickup, Middle: Bridge and Neck Pickups, Down: Bridge Pickup</li>
+            <li>Arcade-Style "Kill Switch"</li>
+          </div>
+          <div><input class="buy" type="button" value="BUY"></input></div>
+        </div>
+        <div class="choices">
+          <div class="guitar-choice">Jaguar</div>
+          <div class="price">$4,499.00</div>
+          <div class="features">
+            <li>DiMarzio® PAF® 36th Anniversary DP103</li>
+            <li>3-Position Toggle: Position 1. Bridge Pickup, Position 2. Bridge And Neck Pickups, Position 3. Neck Pickup</li>
+            <li>Black Chrome Adjusto-Matic™ Bridge</li>
+          </div>
+          <div><input class="buy" type="button" value="BUY"></input></div>
+        </section>
+        </div>
+        <input id="submit" type="submit" value="Submit"></input>
+      </form>
+    </main>
+    <footer>
+      <h2>Copyright 2023, Guitar Shop</h2>
+    </footer>
+  </body>
+</html>
+
+
+
+** end of undefined **
+
+** start of undefined **
+
+*,
+::before,
+::after {
+  font-family: Raleway, sans-serif;
+}
+
+html {
+  background-color: white;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header-img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.nav-link {
+  margin-right: 20;
+  text-decoration: none;
+  font-size: 22px;
+  position: relative;
+  right: 10%;
+  top: 20;
+  margin-left: 40px;
+  color: black;
+}
+
+p:before {
+  content: '♦ ';
+}
+
+p {
+  margin-left: 30%;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+h1 {
+  margin: auto;
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 55px;
+}
+
+#video {
+  width: 800px;
+  height: 500px;
+  display: flex;
+  margin: auto;
+  margin-top: 40px;
+}
+
+form {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#email {
+  width: 350px;
+  height: 35px;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  border-bottom: 3px solid grey;
+  margin-bottom: 40px;
+}
+
+.list {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.choices {
+  width: 200px;
+  height: 400px;
+  background-color: grey;
+  margin-top: 20px;
+  display: grid;
+}
+
+.guitar-choice {
+  padding-top: 12px;
+  height: 45px;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #959595;
+}
+
+.price {
+  font-size: 25px;
+}
+
+.features {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 15px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.buy {
+  width: 80px;
+  height: 35px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+
+#submit {
+  display: block;
+  background-color: grey;
+  color: white;
+  width: 150px;
+  height: 45px;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#submit:hover {
+  color: black;
+}
+
+h2 {
+  text-align: right;
+  font-size: 12px;
+  margin-top: 150px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  #video {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .nav-link {
+    margin-right: 20;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    right: 10%;
+    top: 20;
+    margin-left: 20px;
+    color: black;
+  }
+
+  p {
+    margin-left: 20%;
+    margin-bottom: 20px;
+    font-size: 14px;
+  } 
+
+  .list {
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  } 
+}
+
+** end of undefined **
+

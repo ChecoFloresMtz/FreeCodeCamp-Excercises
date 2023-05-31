@@ -1,0 +1,43 @@
+function telephoneCheck(str) {
+
+  let regex0 = /^[\d]{10}/
+  let regex1 = /^[\d]{3}[-][\d]{3}[-][\d]{4}/
+  let regex2 = /^[\d]{3}[\s][\d]{3}[\s][\d]{4}/
+  let regex3 = /^[(][\d]{3}[)][\s]?[\d]{3}[-][\d]{4}/
+  let regex4 = /^[1][\s][\d]{3}[\s][\d]{3}[\s][\d]{4}/
+  let regex5 = /^[1][\s][\d]{3}[-][\d]{3}[-][\d]{4}/
+  let regex6 = /^[1][\s]?[(][\d]{3}[)][\s]?[\d]{3}[-][\d]{4}/
+  
+  let result = regex0.test(str) || regex1.test(str) || regex2.test(str) || regex3.test(str) || regex4.test(str) || regex5.test(str) || regex6.test(str)
+
+  console.log(result)
+  
+  if (str.length === 11 && str[0] != 1) {
+    return false
+  } else {
+    return result
+  }
+
+  /*
+  let arr = str.split("")
+
+  arr = arr.filter(val => val === "0" || parseInt(val))
+  console.log(arr)
+  arr = arr.map(val => parseInt(val))
+  console.log(arr)
+
+  if(arr.length === 11 && arr[0] === 1 && arr.every(val => typeof(val) === "number")) {
+    return true
+  } else if(arr.length === 10 && arr.every(val => typeof(val) === "number")) {
+    return true
+  } else {
+    return false
+  }
+
+}
+*/
+} 
+
+
+telephoneCheck("2(757)6227382") //false.
+telephoneCheck("2(757)622-7382") //false.

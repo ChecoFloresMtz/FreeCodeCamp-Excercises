@@ -1,0 +1,24 @@
+function sumPrimes(num) {
+  let nums = []
+
+  for (let i = 2; i <= num; i++) {
+    nums.push(i)
+  }
+
+  for (let k = 0; k <= nums.length; k++) {
+    for (let j = 2; j*nums[k] <= num; j++) {
+      let current = nums[k]*j
+      let index = nums.indexOf(current)
+      if(index != -1) {
+      nums.splice(index, 1)
+      }
+    } console.log(nums)
+  }
+
+  let result = nums.reduce((a, b) => a + b)
+  console.log(result)
+  return result  
+}
+
+sumPrimes(10)
+sumPrimes(977);

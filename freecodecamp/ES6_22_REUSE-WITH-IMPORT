@@ -1,0 +1,5 @@
+import {uppercaseString, lowercaseString} from 'C:\Users\sergi\OneDrive\Documentos\VS Studio Proyects\freecodecamp\ES6_21_EXPLORE-TO-SHARE.js'
+// Only change code above this line
+
+console.log(uppercaseString("hello"));
+console.log(lowercaseString("WORLD!"));

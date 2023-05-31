@@ -1,0 +1,21 @@
+function translatePigLatin(str) {
+  let first = str.slice(0, 1)
+  if(first == "a" || first == "e" || first == "i" || first == "o" || first == "u") {
+    console.log(str + "way")
+    return str + "way"
+  } else {
+  let trimed = str.split(/[aeiou]/)
+  let cons = trimed[0]
+  let rest = str.slice(cons.length)
+  console.log(rest + cons + "ay")
+  return rest + cons + "ay";
+  }
+}
+
+translatePigLatin("california")
+translatePigLatin("paragraphs")
+translatePigLatin("glove")
+translatePigLatin("algorithm")
+translatePigLatin("eight")
+translatePigLatin("schwartz")
+translatePigLatin("rhythm");

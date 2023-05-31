@@ -1,0 +1,315 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ChecoFlores Personal Portafolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <a href="#welcome-section">WELCOME</a>
+        <a href="#projects2">PROYECTS</a>
+        <a href="#profiles">CONTACT</a>
+      </nav>
+    </header>
+    <section id="welcome-section">
+      <h1>My name is Sergio</h1>
+      <p id="description">A Civil Engineer Developer..?</p>
+    </section>
+    <h2  id="projects2">My Projects in <a href="https://www.freecodecamp.org/">FreeCodeCamp.org</a></h2>
+    <section id="projects">
+      <div>
+        <h3 class="project-tile">Project 1</h3>
+        <img src="https://quizermania.com/wp-content/uploads/2020/12/survey_SS-1024x759.png"></img>
+        <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form">Survey Form</a>
+      </div>
+      <div>
+        <h3 class="project-tile">Project 2</h3>
+        <img src="https://th.bing.com/th/id/R.a9ea0e37fcde191557cf87923fc96e98?rik=7QfoaEvoyVGjvw&riu=http%3a%2f%2fs.glbimg.com%2fes%2fge%2ff%2foriginal%2f2016%2f09%2f22%2fayrton_senna.jpg&ehk=QlO4ILZ%2bRvw49b6wGLlXmBsXKd9cimqyCjrSXvGKavM%3d&risl=&pid=ImgRaw&r=0"></img>
+        <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-tribute-page-project/build-a-tribute-page">Tribute Page</a>
+      </div>
+      <div>
+        <h3 class="project-tile">Project 3</h3>
+        <img src="https://i.redd.it/ts219gl9xbu01.png"></img>
+        <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-technical-documentation-page-project/build-a-technical-documentation-page">Technical Documentation</a>
+      </div>
+      <div>
+        <h3 class="project-tile">Project 4</h3>
+        <img src="https://cdn.dribbble.com/users/375995/screenshots/6543417/goldencanongrid_4x.png?compress=1&resize=1000x750"></img>
+        <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-product-landing-page-project/build-a-product-landing-page">Product Landing</a>
+      </div>
+    </section>
+    <section id="profiles">My Profiles
+      <p id="social"><a id="profile-link" href="https://www.freecodecamp.org/ChecoFlores103" target="_blank" >freeCodeCamp/Profile</a></p>
+      <p id="social"><a href="https://www.linkedin.com/in/sergio-flores-298147279/" target="_blank">LinkedIn/Profile</a></p>
+      <p id="social"><a href="https://github.com/ChecoFloresMtz" target="_blank">GitHub/Profile</a></p>
+      <p></p>
+    </section>
+    <div class="divisor">
+    </div>
+    <footer>
+      <p>Created by Sergio Flores</p>
+    </footer>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+*, ::before, ::after {
+  background-color: #404050;
+  font-family: Century Gothic;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4rem;
+  margin: 0;
+  padding: 0;
+  background-color: #202030;
+}
+
+#navbar {
+  position: fixed;
+  right: 50px;
+  top: 15px;
+  background-color: #202030;
+}
+
+nav a {
+  color: #aaaaaa;
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin-left: 4rem;
+  font-weight: bold;
+  background-color: #202030;
+}
+
+nav a:hover {
+  color: white;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #808080;
+}
+
+h1, #description {
+  color: #404050;
+  background-color: #808080;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+#description {
+  font-size: 40px;
+  color: #505050;
+}
+
+#projects {
+  color: #aaaaaa;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 96%;
+  max-width: 1400px;
+  margin: auto;
+  height: 60vw;
+  max-height: 800px;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 120px;
+  margin-bottom: 80px;
+  color: #aaaaaa;
+}
+
+h2 a {
+  background-color: #404050;
+}
+
+#projects div {
+  height: 330px;
+  margin-right: 10%;
+  align-items: center;
+  text-align: center;
+  background-color: #808090;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+h3 {
+  padding-bottom: 15px;
+  background-color: #808090;
+  border-radius: 15px;
+  color: #202030;
+  margin-top: 10px;
+}
+
+#projects img {
+  width: 300px;
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+a {
+  color: #202030;
+  text-decoration: none;
+  background-color: #808090;
+}
+
+#profiles {
+  width: 100%;
+  height: 50vw;
+  background-color: #202030;
+  color: #404050;;
+  text-align: center;
+  font-size: 80px;
+  font-weight: bold;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#social * {
+  background-color: #202030;
+  color: white;
+  font-size: 30px;
+}
+
+.divisor {
+  width: 100%;
+  height: 8px;
+  background-color: white;
+  margin-bottom: 200px;
+}
+
+footer {
+  margin-top: -180px;
+  color: grey;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 900px) {
+  #welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #808080;
+}
+
+h1, #description {
+  color: #404050;
+  background-color: #808080;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+#description {
+  font-size: 30px;
+  color: #505050;
+}
+  
+  #projects {
+  color: #aaaaaa;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 96%;
+  max-width: 600px;
+  margin: auto;
+  height: 90vw;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 80px;
+  margin-bottom: 60px;
+  color: #aaaaaa;
+}
+
+h2 a {
+  background-color: #404050;
+}
+
+#projects div {
+  height: 250px;
+  margin-right: 10%;
+  align-items: center;
+  text-align: center;
+  background-color: #808090;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+h3 {
+  padding-bottom: 15px;
+  background-color: #808090;
+  border-radius: 15px;
+  color: #202030;
+  margin-top: 10px;
+}
+
+#projects img {
+  width: 200px;
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+a {
+  color: #202030;
+  text-decoration: none;
+  background-color: #808090;
+}
+
+  #profiles {
+  width: 100%;
+  height: 50vw;
+  background-color: #202030;
+  color: #404050;;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#social * {
+  background-color: #202030;
+  color: white;
+  font-size: 20px;
+}
+
+}
+
+** end of undefined **
+

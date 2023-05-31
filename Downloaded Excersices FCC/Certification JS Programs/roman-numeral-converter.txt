@@ -1,0 +1,146 @@
+function convertToRoman(num) {
+ let separate = '"' + num + '"'
+ separate = separate.split("")
+ separate = separate.filter(val => val != '"')
+ let numOfUnits = separate.length
+
+let result = []
+
+switch(numOfUnits) {
+  case 1:
+  unidad(separate[0])
+  break;
+  case 2:
+  decena(separate[0])
+  unidad(separate[1])
+  break;
+  case 3:
+  centena(separate[0])
+  decena(separate[1])
+  unidad(separate[2])
+  break;
+  case 4:
+  unidadMillar(separate[0])
+  centena(separate[1])
+  decena(separate[2])
+  unidad(separate[3])
+}
+
+function unidadMillar(mil) {
+   switch(mil) {
+     case "3":
+     result.push("MMM")
+     break;
+     case "2":
+     result.push("MM")
+     break;
+     case "1":
+     result.push("M")
+     break;
+   }
+ }
+
+function centena(cen) {
+   switch(cen) {
+     case "9":
+     result.push("CM")
+     break;
+     case "8":
+     result.push("DCCC")
+     break;
+     case "7":
+     result.push("DCC")
+     break;
+     case "6":
+     result.push("DC")
+     break;
+     case "5":
+     result.push("D")
+     break;
+     case "4":
+     result.push("CD")
+     break;
+     case "3":
+     result.push("CCC")
+     break;
+     case "2":
+     result.push("CC")
+     break;
+     case "1":
+     result.push("C")
+     break;
+    }
+  }
+
+function decena(dec) {
+   switch(dec) {
+     case "9":
+     result.push("XC")
+     break;
+     case "8":
+     result.push("LXXX")
+     break;
+     case "7":
+     result.push("LXX")
+     break;
+     case "6":
+     result.push("LX")
+     break;
+     case "5":
+     result.push("L")
+     break;
+     case "4":
+     result.push("XL")
+     break;
+     case "3":
+     result.push("XXX")
+     break;
+     case "2":
+     result.push("XX")
+     break;
+     case "1":
+     result.push("X")
+     break;
+    }
+  }
+
+function unidad(uni) {
+   switch(uni) {
+     case "9":
+     result.push("IX")
+     break;
+     case "8":
+     result.push("VIII")
+     break;
+     case "7":
+     result.push("VII")
+     break;
+     case "6":
+     result.push("VI")
+     break;
+     case "5":
+     result.push("V")
+     break;
+     case "4":
+     result.push("IV")
+     break;
+     case "3":
+     result.push("III")
+     break;
+     case "2":
+     result.push("II")
+     break;
+     case "1":
+     result.push("I")
+     break;
+    }
+  }
+ 
+result = result.join("")
+ return result;
+}
+
+convertToRoman(9)
+convertToRoman(36)
+convertToRoman(798)
+convertToRoman(3999);

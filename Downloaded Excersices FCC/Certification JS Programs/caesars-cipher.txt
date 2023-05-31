@@ -1,0 +1,29 @@
+function rot13(str) {
+  let abc = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+  
+  let arr = str.split("")
+  let result = arr.map(val => {
+    if (val === "!" || val === "?" || val === ".") {
+      return val
+    }
+    
+    let index = abc.indexOf(val)
+    
+    if (index === -1) {
+      return " "
+    } else if (index <= 12) {
+      return abc[index + 13]
+    } else {
+      return abc[index - 13]
+    }
+  })
+
+  result = result.join("")
+  console.log(result)
+  return result;
+}
+
+rot13("SERR PBQR PNZC")
+rot13("SERR CVMMN!")
+rot13("SERR YBIR?")
+rot13("GUR DHVPX OEBJA SBK WHZCF BIRE GUR YNML QBT.");

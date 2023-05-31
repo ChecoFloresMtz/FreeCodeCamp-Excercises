@@ -1,0 +1,22 @@
+function addTogether() {
+  
+  let args = Object.values(arguments)
+
+  if (args.some(val => typeof(val) != "number")) {
+    return undefined
+  }
+
+  if (args.length === 1) {
+    return function (b) {
+      if (typeof(b) === "number") {
+      return args[0] + b
+      } else {
+        return undefined
+      }
+    }
+  }
+
+  return args[0] + args[1]
+}
+
+addTogether(2,3);

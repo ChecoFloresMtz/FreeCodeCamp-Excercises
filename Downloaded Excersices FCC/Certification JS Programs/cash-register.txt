@@ -1,0 +1,193 @@
+function checkCashRegister(price, cash, cid) {
+    let change = []
+    let changeVal = cash - price
+    let current = changeVal
+    
+    let objCID = Object.fromEntries(cid)
+
+    let sumCash = Math.round((Object.values(objCID).reduce((acc, el) => acc + el) + Number.EPSILON) * 100) / 100
+
+    function hundred(val) {
+      if (val < 100) {
+        return
+      } else if (objCID["ONE HUNDRED"] >= Math.floor(val / 100) * 100) {
+        change.push(["ONE HUNDRED", Math.floor(val / 100) * 100])
+        current = val - (Math.floor(val / 100) * 100)
+      } else {
+        return
+      }
+      
+    }
+  
+    function twenty(val) {
+      if (val < 20) {
+        return
+      } else if (objCID["TWENTY"] >= Math.floor(val / 20) * 20) {
+        change.push(["TWENTY", Math.floor(val / 20) * 20])
+        current = val - (Math.floor(val / 20) * 20)
+      } else if (objCID["TWENTY"] > 0 && objCID["TWENTY"] < Math.floor(val / 20) * 20) {
+        change.push(["TWENTY", objCID["TWENTY"]])
+        current = val - objCID["TWENTY"]
+      } else {
+        return
+      }
+    }
+  
+    function ten(val) {
+      if (val < 10) {
+        return
+      } else if (objCID["TEN"] >= Math.floor(val / 10) * 10) {
+      change.push(["TEN", Math.floor(val / 10) * 10])
+      current = current - Math.floor(val / 10) * 10
+      } else if (objCID["TEN"] > 0 && objCID["TEN"] < Math.floor(val / 10) * 10) {
+        change.push(["TEN", objCID["TEN"]])
+        current = val - objCID["TEN"]
+      } else {
+        return
+      }
+    }
+  
+    function five(val) {
+      if (val < 5) {
+        return
+      } else if (objCID["FIVE"] >= Math.floor(val / 5) * 5) {
+      change.push(["FIVE", Math.floor(val / 5) * 5])
+      current = current - Math.floor(val / 5) * 5
+      } else if (objCID["FIVE"] > 0 && objCID["FIVE"] < Math.floor(val / 5) * 5) {
+        change.push(["FIVE", objCID["FIVE"]])
+        current = val - objCID["FIVE"]
+      } else {
+        return
+      }
+    }
+  
+    function one(val) {
+      if (val < 1) {
+        return
+      } else if (objCID["ONE"] >= Math.floor(val)) {
+      change.push(["ONE", Math.floor(val)])
+      current = current - Math.floor(val)
+      } else {
+        return
+      }
+    }
+  
+    function quarter(val) {
+      if (val < .25) {
+          return
+      } else if (objCID["QUARTER"] >= Math.floor(val / .25) * .25) {
+      change.push(["QUARTER", Math.floor(val / .25) * .25])
+      current = current - Math.floor(val / .25) * .25
+      } else {
+        return
+      }
+    }
+    
+    function dime(val) {
+      if (val < .10) {
+        return
+      } else if (objCID["DIME"] >= Math.floor(val / .10) * .10) {
+      change.push(["DIME", Math.floor(val / .10) * .10])
+      current = current - Math.floor(val / .10) * .10
+      } else {
+        return
+      }
+    }
+  
+    function nickel(val) {
+      if (val < .05) {
+        return
+      } else if (objCID["NICKEL"] >= Math.floor(val / .05) * .05) {
+      change.push(["NICKEL", Math.floor(val / .05) * .05])
+      current = current - Math.floor(val / .05) * .05
+      }
+    }
+  
+    function penny(val) {
+      if (val == 0) {
+        return
+      } else if (objCID["PENNY"] >= Math.floor(val / .01) * .01) {
+      change.push(["PENNY", Math.round((val + Number.EPSILON) * 100) / 100])
+      current = current - Math.floor(val / .01) * .01
+      } else {
+        return
+      }
+    }
+  
+    if(current >= 100) {
+      hundred(current)
+      twenty(current)
+      ten(current)
+      five(current)
+      one(current)
+      quarter(current)
+      dime(current)
+      nickel(current)
+      penny(current)
+    } else if(current >= 20) {
+      twenty(current)
+      ten(current)
+      five(current)
+      one(current)
+      quarter(current)
+      dime(current)
+      nickel(current)
+      penny(current)
+    } else if(current >= 10) {
+      ten(current)
+      five(current)
+      one(current)
+      quarter(current)
+      dime(current)
+      nickel(current)
+      penny(current)
+    } else if(current >= 5) {
+      five(current)
+      one(current)
+      quarter(current)
+      dime(current)
+      nickel(current)
+      penny(current)
+    } else if(current >= 1) {
+      one(current)
+      quarter(current)
+      dime(current)
+      nickel(current)
+      penny(current)
+    } else if(current >= .25) {
+      quarter(current)
+      dime(current)
+      nickel(current)
+      penny(current)
+    } else if(current >= .10) {
+      dime(current)
+      nickel(current)
+      penny(current)
+    } else if(current >= .05) {
+      nickel(current)
+      penny(current)
+    } else if(current >= .01) {
+      penny(current)
+    }
+
+    let result = {}
+
+    if (change.length === 0) {
+      result.status = "INSUFFICIENT_FUNDS"
+      result.change = change
+      console.log(result)
+      return result
+    } else if (changeVal === sumCash) {
+      result.status = "CLOSED"
+      result.change = cid
+      console.log(result)
+      return result
+    } else {
+      result.status = "OPEN"
+      result.change = change
+      console.log(result)
+      return result
+    }
+  }
+
+checkCashRegister(19.5, 20, [["PENNY", 0.5], ["NICKEL", 0], ["DIME", 0], ["QUARTER", 0], ["ONE", 0], ["FIVE", 0], ["TEN", 0], ["TWENTY", 0], ["ONE HUNDRED", 0]]);

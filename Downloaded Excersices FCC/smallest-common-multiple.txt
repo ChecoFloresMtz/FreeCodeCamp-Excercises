@@ -1,0 +1,25 @@
+function smallestCommons(arr) {
+  let sort = arr.sort((a, b) => a - b)
+  let min = sort[0]
+  let max = sort[1]
+
+  let numbers = []
+  
+  for (let i = min; i <= max; i++) {
+    numbers.push(i)
+  }
+
+  let length = numbers.reduce((acc, el) => acc*el, 1)
+  let multiplies = []
+
+  for (let j = max; j <= length; j++) {
+    multiplies.push(j)
+  }
+
+  let result = multiplies.find(val => numbers.every(el => val % el === 0))
+
+  console.log(result)
+  return result;
+}
+
+smallestCommons([1,5]);

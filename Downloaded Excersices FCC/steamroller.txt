@@ -1,0 +1,35 @@
+function steamrollArray(arr) {
+
+let result = []
+
+  for (let i in arr) {
+    let depth = arr[i].length
+    console.log(arr[i].length)
+    if(depth === undefined) {
+      result.push(arr[i])
+    } else if (depth === 1 && Array.isArray(arr[i])) {
+      if (arr[i][0].length === undefined) {
+        result.push(arr[i][0])
+      } else {
+      result.push(arr[i][0][0])
+      }
+    } else if (depth === 1) {
+      result.push(arr[i][0])
+    } else if (depth >= 2) {
+      for (let j in arr[i]){
+        let depth2 = arr[i][j].length
+        if(depth2 === undefined) {
+        result.push(arr[i][j])
+        } else if (depth2 === 1) {
+        result.push(arr[i][j][0][0])
+        }
+      }
+    }
+  }
+  
+  console.log(result)
+  return result;
+}
+
+steamrollArray([[["a"]], [["b"]]])
+steamrollArray([1, [2], [3, [[4]]]]);

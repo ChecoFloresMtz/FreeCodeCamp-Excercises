@@ -1,0 +1,285 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arma 3 - User Manual</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <header>Arma 3 - User Manual</header>
+        <a class="nav-link" href="#About">About</a>
+        <a class="nav-link" href="#System_requirements">System requirements</a>
+        <a class="nav-link" href="#Installing_the_Game">Installing the Game</a>
+        <a class="nav-link" href="#Basic_Setup">Basic Setup</a>
+        <a class="nav-link" href="#Getting_Started">Getting Started</a>
+        <a class="nav-link" href="#Controls">Controls</a>
+        <a class="nav-link" href="#Singleplayer">Singleplayer</a>
+        <a class="nav-link" href="#Main_History">Main History</a>
+        <a class="nav-link" href="#Multiplayer">Multiplayer</a>
+        <a class="nav-link" href="#Eden_Editor">Eden Editor</a>
+        <a class="nav-link" href="#Troubleshooting">Troubleshooting</a>
+        <a class="nav-link" href="#End_User_License_Agreement">End User License Agreement</a>
+        <a class="nav-link" href="#Legal_Information">Legal Information</a>
+        <a class="nav-link" href="#References">References</a>
+      </nav>
+      <section class="main-section" id="About">
+        <header>About</header>
+        <p>Experience true combat gameplay in a massive military sandbox. Deploying a wide variety of single- and multiplayer content, over 20 vehicles and 40 weapons, and limitless opportunities for content creation, this is the PC’s premier military game. Authentic, diverse, open – Arma 3 sends you to war.</p>
+        <p>Altis & Stratis: Defeat your enemy on richly detailed battlefields – stretching over 290 km2 of Mediterranean island terrain</p>
+        <p>Weapons & Vehicles: Master a range of 20+ vehicles, aircraft and ships; choose your gear, pick from 40+ weapons, customize your loadout.</p>
+        <p>Singleplayer & Multiplayer: Be deployed in the open gameplay-driven scenarios and campaign – or team up against your enemy in massive competitive and co-operative battles online.</p>
+        <p>Content Creation: Design your own scenarios with the powerful editor; create mods for others to play; join our creative community.</p>
+        <p>Revamped Engine: Navigate the battlefield with fluid new animations; feel the devastating power of combat with the upgraded sound engine, new ragdoll simulation and PhysX®-supported vehicles.</p>
+      </section>
+      <section class="main-section" id="System_requirements">
+        <header>System requirements</header>
+        <p>This is the minimum specs for a PC to start and run the game without crashes, it's recomended to have better specs.</p>
+        <ul>Minimum
+          <li>OS: Windows 7 SP1 64-bit</li>
+          <li>CPU: Intel Dual-Core 2.4 GHz / AMD Dual-Core Athlon 2.5 GHz</li>
+          <li>GPU: NVIDIA GeForce 9800 GT / AMD Radeon HD 5670 / Intel HD Graphics 4000 with 512 MB VRAM</li>
+          <li>DirectX®: 10</li>
+          <li>RAM: 4 GB</li>
+          <li>HDD: 45 GB free space</li>
+          <li>Audio: DirectX® compatible on-board</li>
+          <li>Other Requirements: Internet connection and free Steam account to activate; Dual Layer compatible when installing from DVD</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Installing_the_Game">
+        <header>Installing the Game</header>
+        <p>The installation differs depending on if you are installing the game from the purchased DVD or directly from the Steam client.</p>
+        <p>DVD Autorun: When you place the Arma 3 DVD in your PC’s disk tray and close it, the Setup application should start. The operating system may ask for your confirmation. If it does not, you can find Setup.exe on your DVD drive’s root folder and start it manually. The Setup menu gives you several options, such as visiting our website and, of course, installing the game. To install the game, please follow the instructions provided in the setup process. When prompted, please enter the product code from the back of the printed manual.</p>
+        <p>Steam: In your Steam client, go to the Library and select Arma 3, click the Install icon on the game page. Then select the drive you would like to install the game to and click Next. If you want to have a shortcut in your Start menu or on your Desktop, check the respective options and click Next to proceed. To finish, wait for the game to finish downloading</p>
+      </section>
+      <section class="main-section" id="Basic_Setup">
+        <header>Basic Setup</header>
+        <p>Video: When you run the game for the first time, the auto-detect function will determine the best video settings for your hardware. To adjust them, head into the Video Options menu by navigating through the Options in the Main Menu.
+The Video Options menu contains three tabs.</p>
+        <p>Game Option: You can set up various game options in following tabs</p>
+        <p>Controls: You can set up various game options in following tabs</p>
+      </section>
+      <section class="main-section" id="Getting_Started">
+        <header>Getting Started</header>
+        <p>Under the Tutorials section of the Main Menu, you will find a range of content   purposefully designed to be your introduction to all that Arma 3 has to offer. This is your starting point.</p>
+        <p>Bootcamp: The singleplayer ‘Prologue’ campaign introduces the basics. Set two years before the events of Arma 3’s ‘The East Wind’ campaign, you assist with training the armed forces of The Republic of Altis and Stratis’ newly-formed local government, and witness the events that set the wheels in motion for 2035’s Stratis Flashpoint.</p>
+        <p>VR Training: Arma 3’s virtual playground provides you with an array of in-depth training courses. Purpose-built to teach you everything you need to know for you to be effective on the battlefield. Don’t worry, it isn’t real – failure to succeed won’t result in the death of you or your virtual comrades. Practice makes perfect!</p>
+        <p>Virtual Arsenal: Explore the huge range of infantry equipment. Mix and match weapons, uniforms and items to create character load outs for you and your friends. Each loadout can be saved, loaded, and exported, making them accessible in compatible multiplayer modes, such as Arma 3’s Zeus, as well as your own scenarios. Enter the Garage section to also experiment with all of the game’s vehicles.</p>
+        <p>loadout can be saved, loaded, and exported, making them accessible in compatible multiplayer modes, such as Arma 3’s Zeus, as well as your own scenarios. Enter the Garage section to also experiment with all of the game’s vehicles.</p>
+        <p>Community Guides: Our official ‘Community Guide’ video series offers in-depth insight into some of the basic principles of Arma 3. Note, an internet connection is required to view these guides.</p>
+      </section>
+      <section class="main-section" id="Controls">
+        <header>Controls</header>
+        <p>On Foot Movement
+<li>Sprint - <code>Shift</code> (also possible when crouched or prone)</li>
+<li>Crouch - <code>X</code></li>
+<li>Prone - <code>Z</code></li>
+<li>Stance Up - <code>Ctrl + W</code> (multiple times)</li>
+<li>Stance Down - <code>Ctrl + S</code> (multiple times)</li>
+<li>Peak Left - <code>Q</code></li>
+<li>Peak Right - <code>E</code></li>
+<li>Step Out Left - <code>Ctrl + A</code></li>
+<li>Step Out Right - <code>Ctrl + D</code></li>
+<li>Roll Left - <code>Prone + Q</code></li>
+<li>Roll Right - <code>Prone + E</code></li>
+<li>Dive To Prone - <code>Sprint + Z</code></p>
+
+<p>Weapon
+<li>Look Through Sight - <code>Right Mouse Button</code></li>
+<li>Steady Aim / Zoom - <code>Right Mouse Button</code> (hold)</li>
+<li>Switch Scope - <code>Ctrl + Right Mouse Button</code></li>
+<li>Fire Mode - <code>F</code></li>
+<li>Throw Grenade - <code>G</code></li>
+<li>Switch Weapon - <code>Space</code></li>
+<li>Quick Switch To Pistol - <code>Space</code> (double press)</li>
+<li>Lower Weapon - <code>Ctrl</code> (double press)</li></p>
+
+<p>View
+<li>Freelook - <code>Left Alt</code> (hold, double press to automatically hold it)</li>
+<li>Switch Person View - <code>Numpad (Right) Enter</code></li></p>
+
+<p>Actions
+<li>Inventory - <code>I</code></li>
+<li>Show Map - <code>M</code></li>
+<li>Binoculars - <code>B</code></li>
+<li>Interaction Menu - <code>Scroll</code></li>
+<li>Select (in Interaction Menu) - <code>Middle Mouse Button</code></li></p>
+      </section>
+      <section class="main-section" id="Singleplayer">
+        <header>Singleplayer</header>
+        <p>After clicking the Singleplayer button in the Main Menu, you can choose from several different types of playable content. The tree navigation within these dialogues helps you to select the mission you want to play. The icons indicate which of them you already have started and/or completed.</p>
+        <p>Campaigns: Get introduced to our world, and what may lie in store, with Arma 3’s ‘Prologue’ single player campaign, tightly tied with the main story-driven part of the game, ‘The East Wind’.</p>
+        <p>Following harsh economic and political hardships, the global situation of 2035 finds itself at the breaking point. Tensions between the North Atlantic Treaty Organization (NATO) and the allied countries of the recently-introduced Canton Protocol Strategic Alliance Treaty (CSAT) are at an all-time high, coming to a head in the Pacific. Meanwhile, on the small island Republic of Altis and Stratis, NATO forces are preparing to hand over responsibility for the security of the Republic to the armed forces of the local government, along with an immediate drawdown of all forces and equipment. Many, however, remain skeptical as to the wisdom of such a move.</p>
+        <p>Showcases: Become combat-ready and experience Arma 3’s dynamic military gameplay in the role of infantryman, SCUBA diver, tank operator, helicopter pilot, and more.</p>
+        <p>Challenges: Put your skill and accuracy to the test against the clock in this competitive gamemode.</p>
+        <p>Scenarios: Discover a diverse range of distinctive Arma gameplay. Play custom missions created in the Editor (see below) or downloaded via the <a href="steamcommunity.com/workshop/workshopsubmitinfo">steamcommunity.com/workshop/workshopsubmitinfo</a> or other channels.</p>
+      </section>
+      <section class="main-section" id="Main_History">
+        <header>Main History</header>
+        <p>Arma 3 takes place in the Arma series' fictional universe, set in the near future of the 2030s, during a period of global instability following decades of Western isolationism. The main plot events are primarily set in the Aegean Sea island nation of the Republic of Altis and Stratis[b] in 2034 and 2035, with Beyond Hope set in 2026, Old Man set in 2038, and First Contact set in 2039.</p>
+        <p>The two primary factions in Arma 3 are the North Atlantic Treaty Organization (NATO) and the opposing Canton Protocol Strategic Alliance Treaty (CSAT; based on the Shanghai Cooperation Organisation).[16][c] Other factions include the Altis Armed Forces (AAF), the military of Altis and Stratis who rule the country under a junta; the Freedom and Independence Army (FIA), a loyalist rebel militia led by Altis and Stratis' democratic government in exile; the Combat Technology Research Group (CTRG), NATO's classified black operations special forces unit; the International Development and Aid Project (IDAP), a humanitarian aid non-governmental organization; the Gendarmerie, the Horizon Islands' gendarmerie and defense force; Syndikat, a Tanoan criminal organization that later reforms into L'Ensemble, a guerilla army that is officially anti-imperialist but practically no different from its predecessor; and the Livonian Defense Force (LDF), Livonia's NATO-equipped military. Factions are sorted into three forces: BLUFOR (NATO and allies), REDFOR (CSAT and allies), and INDFOR (independent forces that are not officially part of either side).</p>
+        <p>The plot of Arma 3 takes place over a variety of campaigns, showcase missions, and scenarios. The story is primarily told across eight campaigns: Prologue, The East Wind, Remnants of War, Apex Protocol, Old Man, Tac-Ops, Altis Requiem, and First Contact. Only Prologue and The East Wind are available in the base game, while the rest require their respective DLCs; additionally, the events of First Contact are considered non-canon.</p>
+      </section>
+      <section class="main-section" id="Multiplayer">
+        <header>Multiplayer</header>
+        <p>Play online in various multiplayer modes. Enter the multiplayer server browser by navigating through the Multiplayer tab in the Main Menu.</p>
+        <p>Quick Play: The Quick Play feature finds a best-suited server for you and connects you to it. If you play the game with mods, it will try to find a server with the same combination of mods.
+Navigate from the Main Menu via the Quick Play tab. You can specify a preferred game type or leave it to Any for the broadest set of possible connections. Selecting the Best Server option will go through all available servers and connect you to the best suiting ones. Connecting with the Best Server option may be slower than with the First Server option, but the gameplay should suffer fewer latency problems.</p>
+        <p>Servers: Double-click a session listed in the browser, or use the Join button with a session already selected.
+In the Role Assignment dialog, you can choose the side and the role just by clicking them. Note that sometimes the session host will determine your side or role. When you are ready to start, click the OK button, which will notify the other players, or directly start the game that is already in progress.</p>
+        <p>Direct Connect: If you would like to join a specific host, click the Direct Connect button and enter the host’s address and port number.</p>
+        <p>Host Server: To host your own session, click the Host Server button in the browser. You will be asked to select an existing scenario on any of the terrains or to create a new one with the Eden Editor. Having done this, you will find yourself in the Role Assignment dialog, where you can assign player roles.</p>
+        <p>Zeus: Zeus presents one or more players with a toolbox that they can use to directly influence the session at hand.
+Choose from either an existing rule set – such as the Seize and Defend modes, wherein Game Masters try to thwart or assist the players as they progress through the session – or the no-rules Game Master modes, where players are free to create entire scenarios as they see fit.</p>
+      </section>
+      <section class="main-section" id="Eden_Editor">
+        <header>Eden Editor</header>
+        <p>Arma 3’s built-in editor is a powerful tool for creating and editing both singleplayer and multiplayer scenarios. Its several modes allow placing objects, playable and AI units and groups of units, setting up different types of waypoints and triggers, synchronizing them and editing all their parameters, all in the 3D scene. The editor also offers various modules that make editing easier and help to build complex scenario structures without deep knowledge of Real Virtuality’s scripting language.</p>
+        <p>Since weather conditions and time of day are also crucial for gameplay, the Editor allows you to set all of the weather features that the Real Virtuality engine supports like overcast, dynamic wind, rain, lightning, waves and fog.</p>
+        <p>Besides loading and saving, it is also possible to merge and export scenarios. You can publish scenarios directly to steamcommunity.com/workshop/workshopsubmitinfo and share them with other players. Managing published scenarios is done in the same way as updating them directly, via the Eden Editor.</p>
+        <p>The Eden Editor is a powerful and comprehensive tool that is easy to use at the same time. Check out the in-editor tutorials, or inspect the community.bohemia.net/wiki/Eden_Editor to start creating your own Arma 3 scenarios!</p>
+        <code></code>
+        <code></code>
+        <code></code>
+      </section>
+      <section class="main-section" id="Troubleshooting">
+        <header>Troubleshooting</header>
+        <p>In order to verify the data you have installed and downloaded was not corrupted during transfer, please use the Steam data cache verification option.
+Make sure to conduct a clean installation of Arma 3 (uninstall first by removing your local game cache).
+        <p>Make sure all the necessary drivers are up-to-date.</p>
+        <p>Consider defragmenting your HDD after downloading large updates.</p>
+        <p>Keep checking the Arma 3 website www.arma3.com for troubleshooting and known issues.
+Though this is the final, full release version of Arma 3, your feedback and bug reports are welcome and can help us to improve the game as quickly and efficiently as possible. Please visit feedback.arma3.com to learn how to submit feedback. Thank you for your support!</p>
+      </section>
+      <section class="main-section" id="End_User_License_Agreement">
+        <header>End User License Agreement</header>
+        <p>You should carefully read the following End User License Agreement before installing this software.</p>
+        <p>This computer software program, any printed materials, any online or electronic documentation, and any and all copies and derivative works of such software program and materials (the “Program”) are the copyrighted work. All use of the Program is governed by the copyright law and by the terms of the End User License Agreement, which is provided below (“License”). By using the Program you agree to be legally bound by the terms of this license agreement. Any use, reproduction or redistribution of the Program not in accordance with the terms of the License is expressly prohibited. If you do not agree to the terms of this Agreement, do not install or use the Program. You may, however, return it to your place of purchase for a full refund.</p>
+      </section>
+      <section class="main-section" id="Legal_Information">
+        <header>Legal Information</header>
+        <p>© 2013-2020 BOHEMIA INTERACTIVE a.s. ARMA® and BOHEMIA INTERACTIVE® are trademarks or registered trademarks of BOHEMIA INTERACTIVE a.s. All rights reserved. NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2018 NVIDIA Corporation. All rights reserved.</p>
+        <p>© 2018 Valve Corporation. Steam and the Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries. Portions of this software utilize Simul True Sky technology (© 2015 Simul Software Ltd, all rights reserved). This product includes copyrighted material of DigitalGlobe, Inc. All rights reserved.</p>
+        <p>ARMA 3 simulates real-world weapons, vehicles and other equipment. The product names, logos, brands and other trademarks depicted or referred to in the game or in its ancillary materials are the property of their respective trademark owners. These trademark owners, and the manufacturers of the weapons, vehicles and other equipment used in the game, are not affiliated with the producer of ARMA 3 and do not endorse or sponsor the game.</p>
+      </section>
+      <section class="main-section" id="References">
+        <header>References</header>
+        <li>Contour Program User Manual - Optimized PDF Contour Program User Manual</li>
+        <li>AMEYO USER MANUAL - Download [optimized] AMEYO USER MANUAL - Download</li>
+        <li>Hydrow User Manual - Original PDF Hydrow User Manual - Optimized PDF</li>
+        <li>Contour User Manual - Optimized PDF Contour User Manual - Original PDF</li>
+      </section>
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+@media (min-width: 1700px) {
+  section {
+    margin-left: -50px;
+  }
+}
+
+@media (min-width: 1900px) {
+  section {
+    margin-left: -100px;
+  }
+}
+
+@media (min-width: 2100px) {
+  section {
+    margin-left: -200px;
+  }
+}
+
+@media (min-width: 2300px) {
+  section {
+    margin-left: -300px;
+  }
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #404040;
+}
+
+nav {
+  position: absolute;
+  width: 29%;
+  max-width: 400px;
+  height: 100%;
+}
+
+nav > header {
+  font-family: verdana;
+  color: #101010;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: #808080;
+  font-size: 19px;
+  padding-bottom: 2px;
+  margin-top: 30px;
+  margin-left: 15px;
+  margin-right: 40px;
+  border-bottom: 4px solid black;
+}
+
+#about {
+  padding-top: 40px;
+}
+
+section {
+  position: relative;
+  left: 32%;
+  width: 65%;
+  margin-bottom: 50px;
+  border-bottom: 7px double black;
+}
+
+header {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+p {
+  font-size: 17px;
+  text-align: justify;
+}
+
+li {
+  font-size: 17px;
+}
+
+code {
+  font-size: 18px;
+  font-style: italic;
+  color: grey;
+}
+
+a {
+  color: grey;
+  text-decoration: none;
+}
+
+#references > li {
+  font-style: italic;
+  margin: 8px;
+  font-size: 17px;
+}
+
+** end of undefined **
+

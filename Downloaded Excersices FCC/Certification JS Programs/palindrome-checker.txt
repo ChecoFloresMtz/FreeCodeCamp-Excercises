@@ -1,0 +1,33 @@
+function palindrome(str) {
+  
+  str = str.toLowerCase()
+  let arr = str.split(/[,._-\s()]/)
+  
+  let letters = arr.reduce((acc, el) => {
+    acc.push(el.split("")) 
+    return acc
+    }, [])
+
+  letters = letters.flat(10)
+  
+  let toInvert = letters.slice()
+  let inverted = toInvert.reverse()
+
+  let result1 = letters.join("")
+  let result2 = inverted.join("")
+
+  console.log(result1)
+  console.log(result2)
+
+  if(result1 == result2) {
+    return true;
+  } else {
+    return false
+  }
+
+}
+
+palindrome("eye")
+palindrome("_eye")
+palindrome("race car")
+palindrome("0_0 (: /-\ :) 0-0");

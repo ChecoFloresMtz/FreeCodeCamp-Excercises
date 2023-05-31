@@ -1,0 +1,22 @@
+function myReplace(str, before, after) {
+  let array = str.split(" ")
+  let position = array.indexOf(before)
+  let upperCase = array[position]
+  let letter = upperCase[0][0]
+  if (letter === letter.toUpperCase()) {
+    let afterTemp = after.split("")
+    afterTemp.splice(0, 1, afterTemp[0].toUpperCase())
+    afterTemp = afterTemp.join("")
+    array.splice(position, 1, afterTemp)
+    console.log(array.join(" "))
+    return array.join(" ")  
+  } else {
+    array.splice(position, 1, after.toLowerCase())
+    console.log(array.join(" "))
+    return array.join(" ");
+  }
+}
+
+myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped")
+myReplace("He is Sleeping on the couch", "Sleeping", "sitting")
+myReplace("I think we should look up there", "up", "Down");
